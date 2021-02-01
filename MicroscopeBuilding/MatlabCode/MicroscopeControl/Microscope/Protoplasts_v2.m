@@ -68,12 +68,12 @@ mmc.setProperty("Camera","Exposure",20);
 %Initialize Arduino
 comport=instrfindall;
 delete(comport);
-board=arduino();
+board=arduino('COM4', 'Due', 'Libraries', 'I2C');
 handles.board=board;
 handles.light_status=0;
 writePWMDutyCycle(board,'D2',0);
-handles.temperature_address=scanI2CBus(board);
-handles.dev = i2cdev(board,char(handles.temperature_address(1)));
+%handles.temperature_address=scanI2CBus(board);
+%handles.dev = device(board,char(handles.temperature_address(1)));
 
 % Choose default command line output for Protoplasts_v2
 handles.output = hObject;
@@ -175,10 +175,10 @@ function push_acq_Callback(hObject, eventdata, handles)
 % hObject    handle to push_acq (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
- if handles.live_status==1
-    stop(handles.tmr)
-    delete(timerfind);
- end
+% if handles.live_status==1
+%    stop(handles.tmr)
+%    delete(timerfind);
+% end
 handles.acq_status=1;
 set(handles.push_acq,'BackgroundColor','green');
 delay=get(handles.edit_delay, 'string');
