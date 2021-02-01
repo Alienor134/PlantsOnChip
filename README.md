@@ -1,4 +1,11 @@
+Source and reference:   
+*Kaori Sakai, Florence Charlot, Thomas Le Saux, Sandrine Bonhomme, Fabien Nogué, et al.. Design of a comprehensive microfluidic and microscopic toolbox for the ultra-wide spatio-temporal study of plant protoplasts development and physiology. Plant Methods, BioMed Central, 2019, 15 (1), ⟨10.1186/s13007-019-0459-z⟩. ⟨hal-02309578⟩*  
+PDF: https://hal.archives-ouvertes.fr/hal-02309578/document
+
+
 # PlantsOnChip
+
+
 The set-up allows to take timelapse or live video of a microsystem. The whole set-up fits in an incubator, made from a commercial black plastic storage box, the night/day illumination is created by a light-emitting diode (LED) tile controlled by a mechanical time switch.  
  The microscope itself is made from common optical mounting elements, a CMOS (Complementary Metal Oxide Semiconductor) color camera for imaging, a xy manual translation stage and an Arduino-controlled LED for the intermittent illumina-tion of the sample all along the experiment. The LED element is built by the manufacturer with a collecting lens of large numerical aperture, ca. 60°, that makes illumination homogeneous in the field of view without the need to use a conventional condenser. To immobilize the glass-bottom Petri dish containing the microchip, we designed a 3D-printed adaptor for the xy-stage. A temperature sensor is also connected to the Arduino board for the continuous recording of this parameter during the exper-iment. Temperature varies according to the photoperiod in the 21.5 ± 1.5 °C range. 
 
